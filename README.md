@@ -13,7 +13,7 @@ This ecosystem is categorized into modular laboratory structures. Below is the m
 | :--- | :--- | :--- | :--- | :--- |
 | **01** | NodeMCU Web Automation & Security Kit | NodeMCU ESP8266 (32-Bit) | Wi-Fi Power Actuation & Intrusion Telemetry | [View Kit 01 Specifications](./kits/01-nodemcu-web-automation/) |
 | **02** | Multi-Architecture IoT Integration Suite | Wemos D1 R2 / NodeMCU V3 | Multi-Form-Factor Human-Machine Interface (HMI) | [View Kit 02 Specifications](./kits/02-multi-architecture-iot-lab/) |
-| **03** | *Deploying soon...* | *ESP32 / OLED Arrays* | *Environmental Monitoring Strings* | *In Production Pipeline* |
+| **03** | ESP32 Spatial Telemetry & Ultrasonic Radar Ecosystem | ESP32 NodeMCU (32-Bit) | Contactless Spatial Telemetry & Critical Alarm Strings | [View Kit 03 Specifications](./kits/03-esp32-spatial-telemetry-radar/) |
 
 *Note: This repository is actively expanding to encapsulate all 58 modular automation and prototyping frameworks curated by Zaritech Labs.*
 
