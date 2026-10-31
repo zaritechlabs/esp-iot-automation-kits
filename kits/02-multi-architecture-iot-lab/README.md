@@ -12,7 +12,6 @@ Our hybrid prototyping infrastructure consolidates high-efficiency wireless comp
 *   **Processing Units (Multi-Form-Factor MCU Array):**
     *   **Wemos D1 R2 (Arduino-Uno Footprint):** A high-performance hybrid board featuring the exact physical layout, shield compatibility, and pin architecture of a traditional Arduino Uno, upgraded with a powerful 32-bit Wi-Fi enabled ESP8266 processor.
     *   **NodeMCU V3 ESP8266:** High-frequency Wi-Fi computing node optimized for breadboard prototyping, cloud routing, and web telemetry.
-    *   **Wemos D1 Mini:** Ultra-compact ESP8266-driven micro-node engineered for space-constrained smart automation.
 *   **Human-Machine Interface (HMI):** TTP229-based Capacitive Touch Digital Keypad Matrix for secure, wear-free access control and perimeter authentication.
 *   **Telemetry & Sensory String:** 4x Balanced LDR Light Sensors for multi-directional spatial luminance mapping and solar-tracking algorithms.
 *   **Actuation & Isolation Layer:** 5V Single-Channel Relay Module supporting true **10A (250VAC / 30VDC)** load routing with integrated optocoupler isolation.
