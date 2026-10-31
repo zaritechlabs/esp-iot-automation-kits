@@ -22,6 +22,8 @@ This ecosystem is categorized into modular laboratory structures. Below is the m
 | **09** | Precision Smart-Agriculture Hub & Automated Irrigation Substrate | NodeMCU ESP8266 (32-Bit) | Volumetric Soil Moisture Loops & Isolated Fluid Pump Actuation | [View Kit 09 Specifications](./kits/09-nodemcu-smart-agriculture-irrigation/) |
 | **10** | Secure Matrix Access Control & Servo Actuation Framework | NodeMCU ESP8266 (32-Bit) | 4x4 Matrix Token Parsing & Precision PWM Mechanical Relays | [View Kit 10 Specifications](./kits/10-nodemcu-secure-keypad-servo-lock/) |
 | **11** | Dual-Axis Servo Actuation & Kinematic Positioning Framework | NodeMCU ESP8266 (32-Bit) | Synchronized Dual PWM Vectors & Decoupled High-Current Battery Paths | [View Kit 11 Specifications](./kits/11-nodemcu-dual-axis-servo-positioning/) |
+| **12** | Zaritech UniPro Sensor Fusion Complex & Multi-Tier Gateway | NodeMCU Base Shield Hub | Multi-Bus Sensor Fusion, Biometric Strings & Industrial Siren Alarms | [View Kit 12 Specifications](./kits/12-nodemcu-unipro-sensor-fusion-complex/) |
+
 
 
 
