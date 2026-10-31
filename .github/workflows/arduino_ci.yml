@@ -16,3 +16,13 @@ jobs:
         run: |
           arduino-cli core update-index --additional-urls http://esp8266.com
           arduino-cli core install esp8266:esp8266 --additional-urls http://esp8266.com
+
+      - name: Compile All Zaritech Firmware Files
+        run: |
+          # Bu komut kits/ altındaki tüm .ino uzantılı dosyaları otomatik bulur ve derler
+          for file in $(find kits/ -name "*.ino"); do
+            echo "--------------------------------------------------"
+            echo "[ZARITECH CI] Compiling firmware: $file"
+            echo "--------------------------------------------------"
+            arduino-cli compile --fqbn esp8266:esp8266 "$file"
+          done
