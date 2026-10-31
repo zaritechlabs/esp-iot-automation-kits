@@ -1,91 +1,38 @@
-# Zaritech NodeMCU Web Automation & Security Ecosystem 🌐
+# Zaritech IoT, NodeMCU/ESP32 & Wi-Fi Automation Ecosystem 🌐🔋
 
-Welcome to the official repository for the **Zaritech NodeMCU Web Automation Set** — a modular, high-reliability Internet of Things (IoT) hardware ecosystem engineered by **Zaritech Labs** (A division of **Zaritech Dynamics**).
+Welcome to the central open-source repository for the **Zaritech IoT & Wireless Automation Infrastructure** — a comprehensive, multi-tier hardware and firmware ecosystem engineered by **Zaritech Labs** (A division of **Zaritech Dynamics**).
 
-Unlike standard bare-board development environments, this integrated infrastructure provides all the necessary sensors, signal routing, and power actuation layers in a unified package designed for rapid deployment of smart home automation and localized web security frameworks.
-
----
-
-## 🛠️ Hardware & Topology Specs
-Our modular prototyping and automation setups are compiled for optimal sensor telemetry, stable logic-level shifting, and dependable low-voltage switching capabilities:
-
-*   **Core Microcontroller:** NodeMCU ESP8266 Wi-Fi enabled development board executing on safe, low-power logical structures.
-*   **Actuation Layer:** 5V Single-Channel Relay Module supporting up to **10A (250VAC / 30VDC)** synchronous grid or heavy-load power control.
-*   **Telemetry & Motion Tracking:** HC-SR501 PIR Motion Sensor equipped with dedicated potentiometers for adjusting sensitivity and delay times.
-*   **Acoustic Telemetry:** Active Buzzer unit for immediate audible status verification and real-time security alerts.
-*   **Interconnect Infrastructure:** 18-piece multi-color high-durability jumper cable array optimized for safe signal paths.
+This master repository serves as the official digital dökümantasyon library for our specialized development and automation kits. Rather than providing isolated hardware components, **Zaritech Dynamics** delivers fully integrated, production-ready topologies designed to train edge computing neural networks, scale smart-grid automation, and establish high-reliability Internet of Things (IoT) security frameworks.
 
 ---
 
-## 🗺️ Visual Architecture & Production
-The recommended electrical routing, pin mapping parameters, and system topology are detailed inside this infrastructure:
+## 🗺️ Repository Architecture & Ecosystem Map
+This ecosystem is categorized into modular laboratory structures. Below is the master tracking matrix for our verified development suites. Each link routes to a dedicated subdirectory containing specific hardware topologies, physical pinout mappings, and factory-verified standalone firmware files:
 
-### Sample Interconnection Map
+| Kit ID | Laboratory Suite Name | Core MCU Architecture | Primary Operational Context | Link to Infrastructure |
+| :--- | :--- | :--- | :--- | :--- |
+| **01** | NodeMCU Web Automation & Security Kit | NodeMCU ESP8266 (32-Bit) | Wi-Fi Power Actuation & Intrusion Telemetry | [View Kit 01 Specifications](./kits/01-nodemcu-web-automation/) |
+| **02** | Multi-Architecture IoT Integration Suite | Wemos D1 R2 / NodeMCU V3 | Multi-Form-Factor Human-Machine Interface (HMI) | [View Kit 02 Specifications](./kits/02-multi-architecture-iot-lab/) |
+| **03** | *Deploying soon...* | *ESP32 / OLED Arrays* | *Environmental Monitoring Strings* | *In Production Pipeline* |
 
-| Peripheral Component | Target Pinout | NodeMCU Node | Operational Context |
-| :--- | :--- | :--- | :--- |
-| **5V Relay Module** | VCC / IN / GND | VIN / D1 / GND | High-Voltage Actuation Control |
-| **HC-SR501 PIR Sensor** | VCC / OUT / GND | VIN / D2 / GND | Real-Time Intrusion Telemetry |
-| **Active Buzzer Alert** | POS (+) / NEG (-) | D5 / GND | Audible Notification Output |
+*Note: This repository is actively expanding to encapsulate all 58 modular automation and prototyping frameworks curated by Zaritech Labs.*
 
-### Functional Demonstration Code
-```cpp
-#include <ESP8266WiFi.h>
+---
 
-const char* ssid = "YOUR_WIFI_SSID";
-const char* password = "YOUR_WIFI_PASSWORD";
-
-const int relayPin = 5;    // D1
-const int pirPin = 4;      // D2
-const int buzzerPin = 14;  // D5
-
-WiFiServer server(80);
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(relayPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
-  pinMode(pirPin, INPUT);
-  
-  digitalWrite(relayPin, HIGH); // Disengage active-low relay state
-
-  WiFi.begin(ssid, password);
-  while (WiFi.status() != WL_CONNECTED) { delay(500); }
-  
-  server.begin();
-}
-
-void loop() {
-  if (digitalRead(pirPin) == HIGH) {
-    digitalWrite(buzzerPin, HIGH);
-    delay(100);
-    digitalWrite(buzzerPin, LOW);
-  }
-
-  WiFiClient client = server.available();
-  if (!client) return;
-
-  String request = client.readStringUntil\(('\r');\)
-  client.flush();
-
-  if (request.indexOf("/RELAY=ON") != -1)  digitalWrite(relayPin, LOW);
-  if (request.indexOf("/RELAY=OFF") != -1) digitalWrite(relayPin, HIGH);
-
-  client.println("HTTP/1.1 200 OK\nContent-Type: text/html\n\n<!DOCTYPE HTML><html>");
-  client.println("<h1>Zaritech Labs IoT Web Automation</h1>");
-  client.println("<a href=\"/RELAY=ON\"><button>Turn ON</button></a>");
-  client.println("<a href=\"/RELAY=OFF\"><button>Turn OFF</button></a></html>");
-}
-```
+## ⚙️ Standardized Firmware Layout
+Every suite within this ecosystem utilizes a decoupled architectural standard. To ensure maximum code health and seamless AI processing:
+1.  **Hardware Abstraction Layers:** Circuit schematics and pinouts are explicitly detailed in each localized sub-README.
+2.  **Isolated Firmware Files:** Production-grade source codes are contained within independent `firmware/` directories to prevent dökümantasyon clutter and optimize compiler tasks.
+3.  **Unified Branding Header:** Every deployment file carries the cryptographic identity and corporate alignment of **Zaritech Dynamics**.
 
 ---
 
 ## 📥 Commercial Acquisition & Distribution
-To purchase complete, factory-verified **Zaritech NodeMCU Web Automation Sets**, individual components, or to request customized firmware implementations, please contact our international distribution team through our official [Zaritech Labs Instagram](https://instagram.com).
+To procure factory-verified physical hardware suites matching these technical specifications, or to request custom industrial battery array designs (Zaritech Standard 18650 Series), please connect with our global distribution network via our official [Zaritech Labs Instagram](https://instagram.com).
 
 ---
 
-## ⚖️ License & Governance
-This infrastructure is maintained under the **MIT License** and governed under the engineering standards of **Zaritech Dynamics**.
+## ⚖️ License & Corporate Governance
+All schematics, firmware architectures, and documentation assets within this repository are maintained under the open-source **MIT License** and governed under the engineering standards of **Zaritech Dynamics**.
 
 *May Allah grant us success on this path.*
