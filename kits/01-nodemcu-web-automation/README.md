@@ -21,6 +21,7 @@ Our modular prototyping and automation setups are compiled for optimal sensor te
 The recommended electrical routing, pin mapping parameters, and system topology are detailed inside this infrastructure:
 
 ### Sample Interconnection Map
+![Zaritech NodeMCU Hardware Layout](schematics/hardware_layout.png)
 
 | Peripheral Component | Target Pinout | NodeMCU Node | Operational Context |
 | :--- | :--- | :--- | :--- |
