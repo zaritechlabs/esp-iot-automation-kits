@@ -1,0 +1,18 @@
+name: Zaritech Firmware Verification
+
+on: [push, pull_request]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v1
+
+      - name: Install ESP8266 Core Board
+        run: |
+          arduino-cli core update-index --additional-urls http://esp8266.com
+          arduino-cli core install esp8266:esp8266 --additional-urls http://esp8266.com
