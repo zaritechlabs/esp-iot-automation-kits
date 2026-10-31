@@ -16,6 +16,8 @@ This ecosystem is categorized into modular laboratory structures. Below is the m
 | **03** | ESP32 Spatial Telemetry & Ultrasonic Radar Ecosystem | ESP32 NodeMCU (32-Bit) | Contactless Spatial Telemetry & Critical Alarm Strings | [View Kit 03 Specifications](./kits/03-esp32-spatial-telemetry-radar/) 
 | **04** | ESP32 Uninterruptible IoT Gateway Platform | ESP32 NodeMCU (32-Bit) | Zero-Down-Time Power Management & OLED Telemetry | [View Kit 04 Specifications](./kits/04-esp32-uninterruptible-iot-gateway/) |
 | **05** | Zaritech Exclusive High-Performance IoT Module | NodeMCU ESP8266 (32-Bit) | Decoupled External Brain Prototyping & I2C UI Modules | [View Kit 05 Specifications](./kits/05-nodemcu-exclusive-oled-module/) |
+| **06** | Industrial HMI Rotary Menu System & OLED Interface | NodeMCU ESP8266 (32-Bit) | Quadrature Pulse Tracking & Haptic Nested Menu Systems | [View Kit 06 Specifications](./kits/06-nodemcu-hmi-rotary-menu-system/) |
+
 
 
 
