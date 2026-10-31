@@ -77,6 +77,7 @@ void loop() {
   client.println("<a href=\"/RELAY=OFF\"><button>Turn OFF</button></a></html>");
 }
 ```
+🔗 **[Click here to view the full industrial firmware source code](./firmware/zaritech_web_automation.ino)**
 
 ---
 
