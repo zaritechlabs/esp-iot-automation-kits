@@ -14,12 +14,12 @@ jobs:
 
       - name: Install ESP8266 Core Board
         run: |
-          arduino-cli core update-index --additional-urls http://esp8266.com
-          arduino-cli core install esp8266:esp8266 --additional-urls http://esp8266.com
+          # Kararlı çalışan GitHub tabanlı resmî ek döküman URL'si eklendi
+          arduino-cli core update-index --additional-urls https://github.com
+          arduino-cli core install esp8266:esp8266 --additional-urls https://github.com
 
       - name: Compile All Zaritech Firmware Files
         run: |
-          # Bu komut kits/ altındaki tüm .ino uzantılı dosyaları otomatik bulur ve derler
           for file in $(find kits/ -name "*.ino"); do
             echo "--------------------------------------------------"
             echo "[ZARITECH CI] Compiling firmware: $file"
