@@ -19,6 +19,8 @@ This ecosystem is categorized into modular laboratory structures. Below is the m
 | **06** | Industrial HMI Rotary Menu System & OLED Interface | NodeMCU ESP8266 (32-Bit) | Quadrature Pulse Tracking & Haptic Nested Menu Systems | [View Kit 06 Specifications](./kits/06-nodemcu-hmi-rotary-menu-system/) |
 | **07** | Zaritech UniPro Wireless Desktop Assistant | Wemos D1 R2 (ESP8266) | NTP Synchronized Chronometers & Local Telemetry Hubs | [View Kit 07 Specifications](./kits/07-wemos-unipro-desktop-assistant/) |
 | **08** | Climate-Aware Power Actuation Hub & Local Telemetry String | NodeMCU ESP8266 (32-Bit) | Autonomous Climate Threshold Detection & Isolated Load Switching | [View Kit 08 Specifications](./kits/08-nodemcu-climate-automation-actuator/) |
+| **09** | Precision Smart-Agriculture Hub & Automated Irrigation Substrate | NodeMCU ESP8266 (32-Bit) | Volumetric Soil Moisture Loops & Isolated Fluid Pump Actuation | [View Kit 09 Specifications](./kits/09-nodemcu-smart-agriculture-irrigation/) |
+
 
 
 
